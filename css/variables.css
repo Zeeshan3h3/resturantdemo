@@ -1,0 +1,81 @@
+/* css/variables.css */
+:root {
+    /* COMMON BRAND COLORS */
+    --color-primary: #FF6B35;
+    /* Deep Warm Orange */
+    --color-highlight: #D4AF37;
+    /* Soft Gold */
+
+    /* LIGHT THEME (Default) */
+    --color-bg: #FFF5E1;
+    /* Cream */
+    --color-surface: #FFFFFF;
+    /* Pure White */
+    --color-surface-hover: #F8F9FA;
+    --color-text-main: #1E1E1E;
+    /* Dark Charcoal */
+    --color-text-muted: #6c757d;
+    --color-border: rgba(30, 30, 30, 0.1);
+
+    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.85);
+
+    /* TYPOGRAPHY */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* SIZING & SPACING */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 7rem;
+
+    /* ANIMATIONS */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+    --color-bg: #121212;
+    /* Deep Dark */
+    --color-surface: #1E1E1E;
+    /* Dark Charcoal */
+    --color-surface-hover: #2A2A2A;
+    --color-text-main: #FFF5E1;
+    /* Cream */
+    --color-text-muted: #adb5bd;
+    --color-border: rgba(255, 245, 225, 0.1);
+
+    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.5);
+    --glass-bg: rgba(30, 30, 30, 0.85);
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    transition: background-color var(--transition-base), color var(--transition-base);
+    overflow-x: hidden;
+}
